@@ -1,0 +1,70 @@
+* {
+    --branco: #FFFFFF;
+    --cinza: #F0F4F5;
+    --vermelho: #E83737;
+    --cinza-escuro-texto: #515151;
+    --cinza-medio-texto: #696969;
+    --cinza-claro-texto: #9C9C9C;
+    --vermelho-hover: #bd1c1c;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: var(--cinza-medio-texto);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #e3e3e3;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--vermelho);
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--vermelho-hover);
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.mascara-fundo {
+    background-color: #000;
+    height: 1500px;
+    width: 100vw;
+    opacity: .31;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.mascara {
+    background-color: #000;
+    position: fixed;
+    height: 1500px;
+    width: 100vw;
+    opacity: .31;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#par {
+    background-color: transparent;
+}
+
+#esconde {
+    display: none;
+}
+
+@media screen and (max-width: 1262px) {
+    .mascara-fundo, .mascara {
+        height: 2500px;
+    }
+}

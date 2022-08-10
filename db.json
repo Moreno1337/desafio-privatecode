@@ -1,0 +1,107 @@
+{
+  "pedidos": [
+    {
+      "produtos": [
+        {
+          "nome": "Suco 750ml",
+          "quantidade": 1,
+          "valor": 10
+        }
+      ],
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "bairro": "Centro",
+      "complemento": "",
+      "referencia": "",
+      "endereco": "Rua João Negrão",
+      "numero": "731",
+      "cep": "80010200",
+      "valor_total": 10,
+      "id": 1
+    },
+    {
+      "produtos": [
+        {
+          "nome": "Suco 750ml",
+          "quantidade": 1,
+          "valor": 10
+        },
+        {
+          "nome": "Lanche + Refri",
+          "quantidade": 2,
+          "valor": 50
+        }
+      ],
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "bairro": "Centro",
+      "complemento": "",
+      "referencia": "",
+      "endereco": "Rua João Negrão",
+      "numero": "731",
+      "cep": "80010200",
+      "valor_total": 60,
+      "id": 2
+    },
+    {
+      "produtos": [
+        {
+          "nome": "Lanche + Refri",
+          "quantidade": 1,
+          "valor": 25
+        },
+        {
+          "nome": "Suco 750ml",
+          "quantidade": 1,
+          "valor": 10
+        }
+      ],
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "bairro": "Centro",
+      "complemento": "1",
+      "referencia": "",
+      "endereco": "Rua João Negrão",
+      "numero": "1",
+      "cep": "80010200",
+      "valor_total": 35,
+      "id": 3
+    },
+    {
+      "produtos": [
+        {
+          "nome": "Coca 2 lt",
+          "quantidade": 1,
+          "valor": 10
+        },
+        {
+          "nome": "Suco 750ml",
+          "quantidade": 1,
+          "valor": 10
+        }
+      ],
+      "cidade": "",
+      "estado": "",
+      "complemento": "",
+      "referencia": "",
+      "endereco": "",
+      "numero": "",
+      "cep": "",
+      "valor_total": 20,
+      "id": 4
+    },
+    {
+      "produtos": [],
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "bairro": "Centro",
+      "complemento": "",
+      "referencia": "",
+      "endereco": "Rua João Negrão",
+      "numero": "730",
+      "cep": "80010200",
+      "valor_total": 0,
+      "id": 5
+    }
+  ]
+}

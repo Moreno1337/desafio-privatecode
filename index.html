@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Front-end</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/pedidos.css">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+    <link rel="stylesheet" href="assets/css/detalhes.css">
+    <link rel="stylesheet" href="assets/css/entrega.css">
+    <link rel="stylesheet" href="assets/css/sucesso.css">
+</head>
+<body>
+    <main>
+        <div class="mascara-fundo"></div>
+
+        <div class="tela-pedidos">
+            <div class="tela-pedidos__pedidos">
+                <div class="pedidos__pesquisa">
+                    <div class="pesquisa__container">
+                        <input type="search" placeholder="Pesquisar..." class="pesquisa__input">
+                        <button class="pesquisa__botao"><img src="assets/icons/lupa.svg" alt="Botão de pesquisa" class="pesquisa__lupa"></button>
+                    </div>
+                </div>
+
+                <div class="pedidos__opcoes">
+                    
+                    <ul class="opcoes__filtros">
+                        <li>
+                            <button class="filtros__botao" data-filtro="botao-esquerda">
+                                <img src="assets/icons/flechaEsquerda.svg" alt="Flecha para esquerda para mudar elementos da lista de filtros">
+                            </button>
+                        </li>
+                        <li class="filtros__item" data-filtro="todos" data-filtronumero="7">Todos</li>
+                        <li class="filtros__item esconde-cinco" data-filtro="pizza" data-filtronumero="1">Pizzas</li>
+                        <li class="filtros__item esconde-quatro" data-filtro="combo" data-filtronumero="2">Combo Lanche</li>
+                        <li class="filtros__item esconde-tres" data-filtro="hamburguer" data-filtronumero="3">Hamburguer</li>
+                        <li class="filtros__item esconde-cinco" data-filtro="refrigerante" data-filtronumero="4">Refrigerantes</li>
+                        <li class="filtros__item esconde-dois" data-filtro="suco" data-filtronumero="5">Sucos</li>
+                        <li class="filtros__item esconde" data-filtro="acai" data-filtronumero="6">Açaís</li>
+                        <li>
+                            <button class="filtros__botao" data-filtro="botao-direita">
+                                <img src="assets/icons/flechaDireita.svg" alt="Flecha para direita para mudar elementos da lista de filtros">
+                            </button>
+                        </li>
+                    </ul>
+    
+                    <div class="opcoes__flex">
+                        <ul class="opcoes__produtos">
+                            <li class="produtos__item" data-produto="pizza" data-filtronumero="1">
+                                <img src="assets/img/imagemPedido_01.png" alt="Imagem ilustrativa do pedido" class="produtos__imagem">
+                                <h2 class="produtos__item-titulo">Pizza G</h2>
+                                <p class="produtos__item-preco">R$ 30,00</p>
+                            </li>
+                            
+                            <li class="produtos__item" data-produto="combo" data-filtronumero="2">
+                                <img src="assets/img/imagemPedido_02.png" alt="Imagem ilustrativa do pedido" class="produtos__imagem">
+                                <h2 class="produtos__item-titulo">Lanche + Refri</h2>
+                                <p class="produtos__item-preco">R$ 25,00</p>
+                            </li>
+                            
+                            <li class="produtos__item" data-produto="hamburguer" data-filtronumero="3">
+                                <img src="assets/img/imagemPedido_03.png" alt="Imagem ilustrativa do pedido" class="produtos__imagem">
+                                <h2 class="produtos__item-titulo">Hamburguer</h2>
+                                <p class="produtos__item-preco">R$ 20,00</p>
+                            </li>
+                            
+                            <li class="produtos__item" data-produto="refrigerante" data-filtronumero="4">
+                                <img src="assets/img/imagemPedido_04.png" alt="Imagem ilustrativa do pedido" class="produtos__imagem">
+                                <h2 class="produtos__item-titulo">Coca 2 lt</h2>
+                                <p class="produtos__item-preco">R$ 10,00</p>
+                            </li>
+        
+                            <li class="produtos__item" data-produto="suco" data-filtronumero="5">
+                                <img src="assets/img/imagemPedido_02.png" alt="Imagem ilustrativa do pedido" class="produtos__imagem">
+                                <h2 class="produtos__item-titulo">Suco 750ml</h2>
+                                <p class="produtos__item-preco">R$ 10,00</p>
+                            </li>
+    
+                            <li class="produtos__item" data-produto="acai" data-filtronumero="6">
+                                <img src="assets/img/imagemPedido_02.png" alt="Imagem ilustrativa do pedido" class="produtos__imagem">
+                                <h2 class="produtos__item-titulo">Açaí P</h2>
+                                <p class="produtos__item-preco">R$ 5,00</p>
+                            </li>
+                        </ul>
+    
+                        <ul class="opcoes__paginas">
+                            <p class="paginas__texto">Página</p>
+                            <input type="text" value="1" class="paginas__atual">
+                            <p class="paginas__total">de 1</p>
+                            <div class="paginas__botao-flex">
+                                <button class="paginas__botao"><img src="assets/icons/flechaEsquerdaBranca.svg" alt="Botão página anterior"></button>
+                                <button class="paginas__botao"><img src="assets/icons/flechaDireitaBranca.svg" alt="Botão próxima página"></button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pedidos__perfil">
+                    <img src="assets/img/imagemPerfil.png" alt="Foto de perfil" class="perfil__imagem">
+                    <p class="perfil__nome">Amanda Morais</p>
+                </div>
+            </div>
+
+            <div class="tela-pedidos__carrinho">
+                <div class="carrinho__bloco-vazio"></div>
+                <div class="carrinho__imagem-container">
+                    <img src="assets/img/logoPrivateCode.png" alt="Logotipo da Private Code" class="carrinho__imagem">
+                </div>
+
+                <div class="carrinho__tabela-flex">
+
+                    <div class="carrinho__tabela-container">
+                        <div class="carrinho__tabela carrinho__tabela-cabecalho" id="par">
+                            <h2 class="tabela__titulo coluna">Produto</h2>
+                            <h2 class="tabela__titulo coluna remove">Valor</h2>
+                            <h2 class="tabela__titulo coluna">Quantidade</h2>
+                            <h2 class="tabela__titulo coluna remove">Total</h2>
+                        </div>
+                    </div>
+    
+                    <div class="carrinho__finalizar-flex">
+                        <div class="carrinho__total">
+                            <p class="total__texto">Total</p>
+                            <p class="total__valor" data-carrinhovalortotal>R$ 0,00</p>
+                        </div>
+        
+                        <div class="carrinho__submit">
+                            <button class="carrinho__finalizar">Finalizar</button>
+                            <button class="carrinho__cancelar">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mascara" id="esconde"></div>
+
+        <div class="detalhes" id="esconde">
+            <img class="detalhes__imagem" src="assets/img/imagemTelaDetalhes.png" alt="Ilustração do produto">
+            <div class="detalhes__opcoes">
+                <div class="opcoes__principal">
+                    <div>
+                        <h2 class="opcoes__principal-titulo" data-produtodetalhes="titulo"></h2>
+                        <p class="opcoes__principal-texto" data-produtodetalhes="texto-um"></p>
+                        <p class="opcoes__principal-texto" data-produtodetalhes="texto-dois">Escolha 1 opção</p>
+                    </div>
+                    <div class="opcoes__principal-flex">
+                        <p class="opcoes__principal-obrigatorio">Obrigatório</p>
+                        <p data-produtodetalhes="preco"></p>
+                    </div>
+                </div>
+                <div class="opcoes__scrollbar">
+                    <div class="grid-template scrollbar__cabecalho">
+                        <h3 class="coluna-scrollbar">Produto</h3>
+                        <h3 class="coluna-scrollbar">Valor</h3>
+                        <h3 class="coluna-scrollbar scrollbar__quantidade">Quantidade</h3>
+                    </div>
+                </div>
+                <div class="opcoes__total">
+                    <p class="total__texto">Total</p>
+                    <p class="total__valor" data-detalhesvalortotal></p>
+                </div>
+                <button class="opcoes__botao">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="entrega" id="esconde">
+
+            <div class="entrega__fechar-flex">
+                <img src="assets/icons/cancelar.svg" alt="Fechar tela de dados de entrega" class="entrega__fechar" data-fecharaba>
+            </div>
+
+            <form class="entrega__form">
+
+                <div class="entrega__input-flex entrega__input-flex--entrega">
+                    <label for="forma-entrega" class="entrega__label">Forma de Entrega</label>
+                    <select class="entrega__input" id="forma-entrega" required>
+                        <option value="delivery">Delivery</option>
+                        <option value="tirar-balcao">Tirar no Balcão</option>
+                    </select>
+                </div>
+
+                <div class="entrega__conjunto-flex">
+                    <div class="entrega__input-flex" data-inputdelivery>
+                        <label for="cep" class="entrega__label">CEP</label>
+                        <input type="text" pattern="[\d]{5}-?[\d]{3}" placeholder="00000-000" class="entrega__input" id="cep" required>
+                    </div>
+    
+                    <div class="entrega__input-flex entrega__input--direita" data-inputdelivery>
+                        <label for="bairro" class="entrega__label">Bairro</label>
+                        <select class="entrega__input" id="bairro" required>
+                            <option value="escolha-bairro">Escolha um bairro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="entrega__conjunto-flex">
+                    <div class="entrega__input-flex" data-inputdelivery>
+                        <label for="numero" class="entrega__label">Número</label>
+                        <input type="number" placeholder="123" class="entrega__input" id="numero" required>
+                    </div>
+    
+                    <div class="entrega__input-flex entrega__input--direita" data-inputdelivery>
+                        <label for="cidade" class="entrega__label">Cidade</label>
+                        <input type="text" placeholder="Cidade" class="entrega__input" id="cidade" required>
+                    </div>
+                </div>
+
+                <div class="entrega__input-flex" data-inputdelivery>
+                    <label for="logradouro" class="entrega__label">Logradouro</label>
+                    <input type="text" placeholder="Logradouro" class="entrega__input" id="logradouro" required>
+                </div>
+
+                <div class="entrega__input-flex" data-inputdelivery>
+                    <label for="estado" class="entrega__label">Estado</label>
+                    <input type="text" placeholder="Estado" class="entrega__input" id="estado" required>
+                </div>
+
+                <div class="entrega__input-flex" data-inputdelivery>
+                    <label for="complemento" class="entrega__label">Complemento</label>
+                    <input type="text" placeholder="Complemento" class="entrega__input" id="complemento">
+                </div>
+
+                <div class="entrega__input-flex" data-inputdelivery>
+                    <label for="referencia" class="entrega__label">Referência</label>
+                    <input type="text" placeholder="Referência" class="entrega__input" id="referencia">
+                </div>
+
+                <input type="submit" value="Continuar" class="entrega__botao">
+
+            </form>
+        </div>
+
+        <div class="sucesso" id="esconde">
+
+            <div class="entrega__fechar-flex sucesso__fechar">
+                <img src="assets/icons/cancelar.svg" alt="Fechar tela de dados de entrega" class="entrega__fechar" data-fecharabasucesso>
+            </div>
+
+            <div class="sucesso__imagem-container">
+                <img src="assets/img/imagemSucesso.png" alt="Sucesso" class="sucesso__imagem">
+            </div>
+
+            <h2 class="sucesso__texto">Pedido Realizado com Sucesso</h2>
+
+            <div class="sucesso__imagem-container">
+                <button class="sucesso__botao">Continuar</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/telaDePedidos.js"></script>
+</body>
+</html>
